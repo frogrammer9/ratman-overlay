@@ -7,7 +7,7 @@ DESCRIPTION="Gentoo install script creating ratman workstation"
 HOMEPAGE="https://dont-forget-to-create-this"
 
 EGIT_REPO_URI=""
-LICENSE="WTFPL"
+LICENSE="WTFPL-2"
 SLOT="0"
 KEYWORDS=""
 IUSE=""

@@ -3,14 +3,15 @@
  
 EAPI=8
 
-DESCRIPTION="Ratman neovim config"
-HOMEPAGE="https://dont-forget-to-create-this"
+inherit git-r3
 
-EGIT_REPO_URI=""
-LICENSE="WTFPL"
+DESCRIPTION="Ratman neovim config"
+HOMEPAGE="https://github.com/frogrammer9/nvim-rc"
+
+EGIT_REPO_URI="https://github.com/frogrammer9/nvim-rc.git"
+LICENSE="WTFPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
 
 DEPEND=""
 RDEPEND="
@@ -25,7 +26,14 @@ RDEPEND="
 	llvm-core/clang
 	dev-util/lua-language-server
 	dev-util/neocmakelsp
-	app-text/texlab
-	
 "
 BDEPEND=""
+
+src_install() {
+    insinto /etc/xdg/nvim
+	doins -r *
+
+	fowners -R root:root /etc/xdg/nvim
+    fperms -R 0755 /etc/xdg/nvim
+    find "${ED}/etc/xdg/nvim" -type f -exec chmod 0644 {} +
+}

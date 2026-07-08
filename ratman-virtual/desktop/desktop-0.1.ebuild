@@ -6,7 +6,7 @@ EAPI=8
 DESCRIPTION="Package list for ratman desktop"
 HOMEPAGE="https://dont-forget-to-create-this"
 
-LICENSE="WTFPL"
+LICENSE="WTFPL-2"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
