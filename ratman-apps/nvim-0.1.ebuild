@@ -24,7 +24,7 @@ RDEPEND="
 
 	llvm-core/clang
 	dev-util/lua-language-server
-	dev-util/cmake-language-server
+	dev-util/neocmakelsp
 	app-text/texlab
 	
 "
