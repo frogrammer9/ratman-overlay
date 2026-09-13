@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/wayland-protocols media-libs/fcft dev-libs/libinput x11-libs/libxkbcommon x11-libs/pixman dev-libs/wayland gui-libs/wlroots:0.18
+DESCRIPTION=Ratman dwl config
+EAPI=8
+HOMEPAGE=https://github.com/frogrammer9/dwl-rc
+INHERIT=git-r3
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=media-libs/fcft dev-libs/libinput x11-libs/libxkbcommon x11-libs/pixman dev-libs/wayland gui-libs/wlroots:0.18 gui-apps/foot
+SLOT=0
+_eclasses_=git-r3	e6c2f983e006e805160436c75a0c1562
+_md5_=51fe7c3c119e2103966e1e0a2d526ef8

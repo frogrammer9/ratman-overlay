@@ -13,13 +13,10 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="
-gui-apps/swaybg
-www-clinet/qutebrowser # TODO Sec concerns
-app-editors/neovim
-sys-apps/eza
-gui-apps/grim
-gui-apps/slurp
-gui-apps/foot
+ratman-virtual/base
+www-client/qutebrowser
 sys-process/btop
+
+ratman-apps/dwl
 "
 BDEPEND=""

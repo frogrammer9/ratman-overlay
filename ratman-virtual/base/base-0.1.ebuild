@@ -13,14 +13,8 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="
-sys-fs/cryptsetup
-sys-kernel/ugrd
-sys-fs/btrfs-progs
 sys-firmware/sof-firmware
 sys-kernel/linux-firmware
-sys-apps/systemd-utils
-sys-boot/efibootmgr
-sys-kernel/installkernel
 net-misc/networkmanager
 sys-process/cronie
 app-admin/doas
@@ -29,5 +23,17 @@ app-portage/gentoolkit
 sys-auth/seatd
 sys-apps/dbus
 dev-vcs/git
+net-misc/openssh
+app-shells/fish
+app-editors/neovim
+
+ratman-config/fish
+ratman-config/neovim
 "
 BDEPEND=""
+
+pkg_postinst() {
+	rc-update add NetworkManager default
+	rc-update add chronie default
+	rc-update add seatd default
+}
