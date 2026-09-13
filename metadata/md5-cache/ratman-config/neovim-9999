@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=Ratman neovim config
+EAPI=8
+HOMEPAGE=https://github.com/frogrammer9/nvim-rc
+INHERIT=git-r3
+LICENSE=WTFPL-2
+PROPERTIES=live
+RDEPEND=>=app-editors/neovim-0.12 app-shells/fzf dev-libs/tree-sitter-c dev-libs/tree-sitter-cpp dev-libs/tree-sitter-lua dev-libs/tree-sitter-bash dev-libs/tree-sitter-cmake llvm-core/clang dev-util/lua-language-server dev-util/neocmakelsp
+SLOT=0
+_eclasses_=git-r3	e6c2f983e006e805160436c75a0c1562
+_md5_=9623603460a1e620f83b74ba45f8b16f

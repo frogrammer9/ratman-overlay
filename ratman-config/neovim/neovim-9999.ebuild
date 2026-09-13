@@ -16,6 +16,7 @@ KEYWORDS=""
 DEPEND=""
 RDEPEND="
 	>=app-editors/neovim-0.12
+	app-shells/fzf
 
 	dev-libs/tree-sitter-c
 	dev-libs/tree-sitter-cpp
@@ -28,6 +29,8 @@ RDEPEND="
 	dev-util/neocmakelsp
 "
 BDEPEND=""
+
+CONFIG_PROTECT_MASK="${CONFIG_PROTECT_MASK} /etc/xdg/nvim"
 
 src_install() {
     insinto /etc/xdg/nvim
